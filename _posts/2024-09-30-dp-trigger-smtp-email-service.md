@@ -24,7 +24,7 @@ To enable the test, I'm using free public smtp server : https://mailtrap.io
 The log-target method is fairly straight forward.
 
 1). For test purpose, I'm creating a new log-category 'testsmtp'.
-2). Next create log-target object and configure the details as below:
+2). Next create log-target object and configure the details as below 👇:
 
 ![smtp-log-target-main-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/smtp-log-target-main-tab.jpg)
 _smtp-log-target-main-tab_
@@ -37,7 +37,7 @@ _smtp-log-target-event-subscription-tab_
 > If SMTP server needs TLS and Username/Password authentication, we would need to update default user-agent.
 {: .prompt-tip }
 
-4). Create a new password-alias object (hardcoding password is deprecated) and create new Basic Auth Policy in default user-agent as below:
+4). Create a new password-alias object (hardcoding password is deprecated) and create new Basic Auth Policy in default user-agent as below 👇:
 
 ![user-agent-auth-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-auth-tab.jpg)
 _user-agent-auth-tab_
@@ -47,7 +47,7 @@ _user-agent-auth-tab_
 ![user-agent-smtp-client-auth-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-smtp-client-auth-tab.jpg)
 _user-agent-smtp-client-auth-tab_
 
-To test, go to troubleshooting and 'Generate Log Event' as below:
+To test, go to troubleshooting and 'Generate Log Event' as below 👇:
 
 ![generate-log-event-troubleshooting](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/generate-log-event-troubleshooting.jpg)
 _generate-log-event-troubleshooting_
@@ -106,7 +106,7 @@ _dp-probe-screenshot-troubleshooting_
 ![email-confirmation-urlopen](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-urlopen.jpg)
 _email-confirmation-urlopen_
 
-— Keep Learning
+— Keep Learning 😊
 
 — Aditya Singh
 
