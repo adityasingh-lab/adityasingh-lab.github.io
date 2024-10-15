@@ -19,7 +19,7 @@ I have also developed user-defined policies for injection checks, such as SQL In
 
 At the end of October 2022, I had the opportunity to join Prolifics, where I contributed to migrations from API-Connect v5 to v10, v2018 to v10 and DataPower v2018 to v10. I provided interim support for classified clients. Additionally, I was involved in Azure cloud as technical lead, which required face-to-face client consultations to understand their needs, and the creation of design documents (HLDs/LLDs). These documents covered network design (e.g., VNet, VPN, public/private endpoints), subscriptions, security, and resources (such as serverless functions, Logic Apps, ADF, Azure Storage, MySQL, API Management, Service Bus) along with their SKUs.
 
-Apart from above, I also enjoy sightseeing, campaigning, bike ride, cooking, table-tennis, gym and so on..... 
+Apart from above, I also enjoy sightseeing, campaigning, bike ride, cooking, table-tennis, gym.
 
 You can [connect-Me-on-Linkedi](https://www.linkedin.com/in/aditya-singh-apimgmt1987/){:target="_blank"}
 

@@ -27,31 +27,35 @@ The log-target method is fairly straight forward.
 2). Next create log-target object and configure the details as below:
 
 ![smtp-log-target-main-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/smtp-log-target-main-tab.jpg)
+_smtp-log-target-main-tab_
 
 3). Add log-catagory to event Subscription tab
 
-![](assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/smtp-log-target-event-subscription-tab.jpg)
+![smtp-log-target-event-subscription-tab](assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/smtp-log-target-event-subscription-tab.jpg)
+_smtp-log-target-event-subscription-tab_
 
 > If SMTP server needs TLS and Username/Password authentication, we would need to update default user-agent.
 {: .prompt-tip }
 
-If this article helped you in someway and want to support me, you can ... [![](/assets/img/posts/buymecoffee/default-yellow-ezgif.com-webp-to-jpg-converter.jpg)](https://buymeacoffee.com/aditya.singh){:target="_blank"}
-
 4). Create a new password-alias object (hardcoding password is deprecated) and create new Basic Auth Policy in default user-agent as below:
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-auth-tab.jpg)
+![user-agent-auth-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-auth-tab.jpg)
+_user-agent-auth-tab_
 
 5). Add SMTP Client policy in default user-agent tab and ensure to check STARTTLS and Authentication options:
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-smtp-client-auth-tab.jpg)
+![user-agent-smtp-client-auth-tab](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-smtp-client-auth-tab.jpg)
+_user-agent-smtp-client-auth-tab_
 
 To test, go to troubleshooting and 'Generate Log Event' as below:
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/generate-log-event-troubleshooting.jpg)
+![generate-log-event-troubleshooting](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/generate-log-event-troubleshooting.jpg)
+_generate-log-event-troubleshooting_
 
 Message Received in email as :
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-logtarget.jpg)
+![email-confirmation-logtarget](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-logtarget.jpg)
+_email-confirmation-logtarget_
 
 In XSLT, we can trigger log category using dp:type="smtptest" in <xsl:message>. Refer [xsl:message](https://www.ibm.com/docs/en/datapower-gateway/10.5.x?topic=extensions-xslmessage).
 
@@ -96,9 +100,11 @@ For demo purpose, I'm using loopback service to demonstrate url-open.
 
 Trigger the service and we can see this from DataPower probe as well
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/dp-probe-screenshot-troubleshooting.jpg)
+![dp-probe-screenshot-troubleshooting](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/dp-probe-screenshot-troubleshooting.jpg)
+_dp-probe-screenshot-troubleshooting_
 
-![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-urlopen.jpg)
+![email-confirmation-urlopen](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-urlopen.jpg)
+_email-confirmation-urlopen_
 
 — Keep Learning
 
