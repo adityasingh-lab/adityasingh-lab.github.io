@@ -21,7 +21,7 @@ At the end of October 2022, I had the opportunity to join Prolifics, where I con
 
 Apart from above, I also enjoy sightseeing, campaigning, bike ride, cooking, table-tennis, gym and so on..... 
 
-You can [connect-Me-on-Linkedi](https://www.linkedin.com/in/aditya-singh-apimgmt1987/)
+You can [connect-Me-on-Linkedi](https://www.linkedin.com/in/aditya-singh-apimgmt1987/){:target="_blank"}
 
 ---
 > Keep Learning
