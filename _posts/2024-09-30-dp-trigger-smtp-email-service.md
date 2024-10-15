@@ -35,6 +35,8 @@ The log-target method is fairly straight forward.
 > If SMTP server needs TLS and Username/Password authentication, we would need to update default user-agent.
 {: .prompt-tip }
 
+If this article helped you in someway and want to support me, you can ... [![](/assets/img/posts/buymecoffee/default-yellow-ezgif.com-webp-to-jpg-converter.jpg)](https://buymeacoffee.com/aditya.singh){:target="_blank"}
+
 4). Create a new password-alias object (hardcoding password is deprecated) and create new Basic Auth Policy in default user-agent as below:
 
 ![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/user-agent-auth-tab.jpg)
@@ -97,3 +99,9 @@ Trigger the service and we can see this from DataPower probe as well
 ![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/dp-probe-screenshot-troubleshooting.jpg)
 
 ![](/assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/email-confirmation-urlopen.jpg)
+
+— Keep Learning
+
+— Aditya Singh
+
+>_If this article helped you in someway and want to support me, you can_ ... [![](/assets/img/posts/buymecoffee/default-yellow-ezgif.com-webp-to-jpg-converter.jpg)](https://buymeacoffee.com/aditya.singh){:target="_blank"}
