@@ -4,6 +4,7 @@ date: 30-Sep-2024
 categories: [IBM, DataPower ]
 tags: [DataPower, smtp, mpgw]
 author: aditya-singh
+image: /assets/img/posts/2024-09-30-dp-trigger-smtp-email-service/smtp.gif
 ---
 
 Hello Tech Enthusiasts 👋,
@@ -18,7 +19,7 @@ Before beginning, regardless of the method chosen, we will need the following de
 - Recipient email address.
 - From email address. This is important as many SMTP server would reject is incoming email domain isn't recognized.
 
-To enable the test, I'm using free public smtp server : https://mailtrap.io
+To enable the test, I'm using free public smtp server : [mailtrap](https://mailtrap.io)
 
 ## Through log-target
 The log-target method is fairly straight forward.
