@@ -4,6 +4,7 @@ date: 25-Sep-2024
 categories: [IBM, IBM API Connect ]
 tags: [IBM API Connect, toolkit]
 author: aditya-singh
+image: /assets/img/posts/2024-09-24-apicv10-windows-toolkit/designer-toolkit-homepage.jpg
 ---
 
 Hello Tech Enthusiasts 👋,

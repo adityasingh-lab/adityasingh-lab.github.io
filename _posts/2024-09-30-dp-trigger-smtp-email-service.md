@@ -36,7 +36,7 @@ _smtp-log-target-main-tab_
 _smtp-log-target-event-subscription-tab_
 
 > If SMTP server needs TLS and Username/Password authentication, we would need to update default user-agent.
-{: .prompt-tip }
+{: .prompt-info }
 
 4). Create a new password-alias object (hardcoding password is deprecated) and create new Basic Auth Policy in default user-agent as below 👇:
 
