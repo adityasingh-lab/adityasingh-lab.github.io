@@ -44,6 +44,8 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/aditya-singh-apimgmt1987/
 
+google_ad_client: ca-pub-1895446526829946
+
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
@@ -98,7 +100,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://media.licdn.com/dms/image/v2/D4E35AQFDde2Yo_LMYA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1720123879744?e=1729677600&v=beta&t=Zo6bxfbsWTrDQnwjKChH6kyQf97VdRR7oXtRAvvFJRE
+avatar: https://media.licdn.com/dms/image/v2/D4E35AQFDde2Yo_LMYA/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1720123879744?e=1730296800&v=beta&t=q0wZCXC7TgBbGUk-cEzgEwNQ9h3Vu8yB8TWfvH7YHLs
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
