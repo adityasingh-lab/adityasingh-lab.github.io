@@ -13,7 +13,11 @@ _API Management Key Components_
 
 Hello Tech Enthusiasts 👋,
 
-With the nearly end of year 2024, thought it would be good time to initiate discussion about API Management principles. To start with, let's first understand what exactly API is. API stands for Application Prgramming interface which basically is a set of rules and protocols that allow different software applications to communicate with each other. It defines how requests and responses should be formatted, enabling developers to interact with a service, system, or application without needing to understand its internal workings. 
+With the nearly end of year 2024, thought it would be good time to initiate discussion about API Management principles. 
+
+## **Overview**
+
+To start with, let's first understand what exactly API is. API stands for Application Prgramming interface which basically is a set of rules and protocols that allow different software applications to communicate with each other. It defines how requests and responses should be formatted, enabling developers to interact with a service, system, or application without needing to understand its internal workings. 
 
 Example: Food ordering application
 
@@ -27,6 +31,7 @@ Example: Food ordering application
 
 In order to build a good API Management platform, there are numerous API Management applications like IBM API Connect, Kong, Mulesoft, Google APIGEE, and so on. I've seen organisations having their own API Management application to some extent, but these custom build platform have their own pros (limited) and cons(many). The API Management platform in market are build to ease the overall development process with low-code/no-code paradigm.
 
+## **Key Components**
 So let's first understand, what are the components that your API Management platform should have. There are four major components
 
 ### **API Portal**
