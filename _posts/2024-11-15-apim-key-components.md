@@ -29,29 +29,31 @@ In order to build a good API Management platform, there are numerous API Managem
 
 So let's first understand, what are the components that your API Management platform should have. There are four major components
 
-### API Portal
+### **API Portal**
 
 The API Portal is main portal which helps the provider organisation to define the APIs for consumers. On a high level, the purpose of API Portal are :
 
-- Centralised Platform of API Management: If the platform build on-prem, the first job is to install and connect other various component (API Gateway, Developer Portal, Analytics). This is due to behaviour of API Management as management portal usually be the taking care of all communication. If the solution is on cloud (e.g. Azure API-Management), the resource installation usually takes care of all the component installation and their connection as well. 
-- Define APIs: This is management portal where developers (provider organisation) develops the APIs and in some cases Products (group of APIs) and deploy them. These APIs need to be developed through API standards.
-- API Lifecycle Management: The management portal also takes care of API liefcycle which is deployment of APIs, management of application subscriptions (this is usually part of developer -prtal, but in some-case, management portal also can do the same), retire/deprecate/archive of APIs. Whenever a new version of API need to be deployed, it's important this process to make sure the existing API version to be retired. 
+- **Centralised Platform of API Management**: If the platform build on-prem, the first job is to install and connect other various component (API Gateway, Developer Portal, Analytics). This is due to behaviour of API Management as management portal usually be the taking care of all communication. If the solution is on cloud (e.g. Azure API-Management), the resource installation usually takes care of all the component installation and their connection as well. 
+- **Define APIs**: This is management portal where developers (provider organisation) develops the APIs and in some cases Products (group of APIs) and deploy them. These APIs need to be developed through API standards.
+- **API Lifecycle Management**: The management portal also takes care of API liefcycle which is deployment of APIs, management of application subscriptions (this is usually part of developer -prtal, but in some-case, management portal also can do the same), retire/deprecate/archive of APIs. Whenever a new version of API need to be deployed, it's important this process to make sure the existing API version to be retired. 
 
-### API Gateway
+### **API Gateway**
 
 - API Gateway is the main application/server where all APIs are deployed. All consumers and provider connects only through API Gateway. It acts as an entry point for all requests. It main job is to handle request routing, authentication, rate limiting, caching, and monitoring.
 - Usually the API-Gateway connects to management portal through management IPs while the client application connects.
 
-### Analytics
+### **Analytics**
 
 - Tracks API usage, performance, errors, and latency through dashboards and reports.
 - Helps identify trends and issues for optimization.
 
 
-### Developer Portal
+### **Developer Portal**
 
 - Provides documentation, usage guidelines, and testing tools for developers to understand and consume APIs effectively.
 - Often includes an API sandbox for experimentation.
+
+Please do comment yout thoughts and experience in API Management.
 
 — Keep Learning 😊
 
