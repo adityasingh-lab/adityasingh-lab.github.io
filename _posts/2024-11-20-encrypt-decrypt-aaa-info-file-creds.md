@@ -16,7 +16,7 @@ There are other mechanism which can be helpful, but in this article I'm purely f
 
 **Admin Process**
 
-![](/assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/Admin-Steps.png){: width="600" height="400" }
+![](/assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/admin-steps.gif){: width="600" height="400" }
 _Adminstrator Steps_
 
 1. Admin post plain credentials credential by using encrypt/decrypt service in DataPower.
