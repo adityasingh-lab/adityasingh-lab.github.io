@@ -1,5 +1,5 @@
 ---
-title: "Secure Authentication using AAA info file"
+title: "Encrypt & Decrypt AAA-Info file credentials"
 date: 20-Nov-2024
 categories: [IBM, DataPower ]
 tags: [datapower, aaa, aaa-info]
