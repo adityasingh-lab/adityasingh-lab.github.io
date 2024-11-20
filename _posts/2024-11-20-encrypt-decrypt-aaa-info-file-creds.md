@@ -36,7 +36,8 @@ _Validate Encrypted Password_
 
 **Sequence Diagram**
 
-Below sequence diagram depicts the above flow (better visible in light theme)
+> Enable light theme for better visibilty
+{: .prompt-tip }
 
 ```mermaid
 sequenceDiagram
