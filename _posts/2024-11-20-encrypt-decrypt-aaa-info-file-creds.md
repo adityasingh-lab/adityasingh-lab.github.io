@@ -36,7 +36,7 @@ _Validate Encrypted Password_
 
 **Sequence Diagram**
 
-> Enable light theme for better visibilty
+> Enable light theme for better visibilty of sequence diagram
 {: .prompt-tip }
 
 ```mermaid
