@@ -10,9 +10,9 @@ image: /assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/aaa-auth-image.p
 
 Hello Tech Enthusiasts 👋,
 
-AAA is something DataPower is offerring from a day of appliance available in marked. So it's not a new topic of discussion. However, as a authentication mechanism, which is basic-auth, aaa-info file is widely used. I usually don't support as the creds are visible whomesover has access to domain/environment. 
+AAA is something DataPower is offerring from a day of appliance available in market. So it's not a new topic of discussion. However, when it comes to basic-auth authentication mechanism, aaa-info file is what widely used. I usually don't support as the creds are visible whomesover has access to domain/environment.
 
-There are other mechanism which can be helpful, but in this article I'm purely focussing on easy solution. The easiest option is using encrypt/decrypt mechanism which to be used for credentials. Here you go with the design and sequence diagram to understand the process.
+We do have other supported authentication and authorization mechanism, which can be helpful, but in this article I'm purely focussing on alternate solution towards encrypt/decrypt mechanism for aaa-info file credentials.
 
 **Admin Process**
 
