@@ -50,7 +50,7 @@ activate dp
 dp ->> dp: extract authorization header <br/>ZnJlZDpuYzY5a0I1c0RwNTlibDl3WURRL3pvQ2p2REsvQStHY0V1WjlKVFZkdVo4PTw=
 dp ->> dp: extract encrypted password : nc69kB5sDp59bl9wYDQ/zoCjvDK/A+GcEuZ9JTVduZ8=
 dp ->> dp: decrypt password using the encrypted algo and shared-secret-key : smith
-dp ->> dp: construct new authorization header with plain username and decrypted password : Basic ZnJlZDpzbWl0aA== 
+dp ->> dp: construct new authorization header with plain username and decrypted password<br/>Basic ZnJlZDpzbWl0aA== 
 dp ->> dp: calls AAA policy to authenticate using AAA-Info.xml file
 dp ->> cl: complete transaction for further processing
 deactivate dp
