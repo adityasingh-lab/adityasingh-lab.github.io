@@ -24,7 +24,7 @@ _Adminstrator Steps_
 3. Admin shared the plain username and encrypted password with client via secure line.
 4. Admin to update the aaa-info.xml file with plain username and password.
 
-Below postman screenshot depicts the behavior of service
+Below postman screenshot depicts the behavior of service 👇
 
 ![](/assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/generate-encrypted-string-dark.png){: .dark }
 ![](/assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/generate-encrypted-string-light.png){: .light }
