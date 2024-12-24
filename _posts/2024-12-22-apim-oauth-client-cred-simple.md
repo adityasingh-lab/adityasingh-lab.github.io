@@ -5,7 +5,7 @@ categories: [IBM, IBM API Connect]
 tags: [IBM API Connect, DataPower, OAUTH]
 author: aditya-singh
 mermaid: true
-image: /assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-design-header-low-definition-1.png
+# image: /assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-design-header-low-definition-1.png
 ---
 
 Hello Tech Enthusiasts 👋,
