@@ -19,7 +19,7 @@ We do have other supported authentication and authorization mechanism, which can
 ![](/assets/img/posts/2024-11-20-datapower-aaa-info-alt-auth/admin-steps.gif){: width="600" height="400" }
 _Adminstrator Steps_
 
-1. Admin post plain credentials credential by using encrypt/decrypt service in DataPower.
+1. Admin post plain text credential by using encrypt/decrypt service in DataPower.
 2. DataPower returns encrypted text to admin.
 3. Admin shared the plain username and encrypted password with client via secure line.
 4. Admin to update the aaa-info.xml file with plain username and password.
