@@ -13,6 +13,7 @@ Hello Tech Enthusiasts 👋,
 This article is the start of deep diving into the different form of OAuth implementation in IBM API Connect. To start with, let's first clear our understanding of OAuth 2.0 (OAuth 2.1 is in draft )
 
 ## OAuth Overview
+
 OAuth began as a solution to a common problem i.e.: Users needing to share access to their accounts on one platform with another platform without sharing their credentials. The need arose primarily from the experiences of developers working on platforms like Twitter and Flickr. They needed a secure way to delegate access without compromising user privacy. 
 The first version, OAuth 1.0, was created in December 2007 as an open protocol. It was spearheaded by Blaine Cook (Twitter) and Chris Messina (Flickr) with contributions from other developers.
 
