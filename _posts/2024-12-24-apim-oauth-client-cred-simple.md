@@ -1,11 +1,11 @@
 ---
 title: "Implementing Secure OAuth 2.0 Authentication with Client Credential Grant in IBM API Connect v10"
-date: 22-Dec-2024
+date: 24-Dec-2024
 categories: [IBM, IBM API Connect]
 tags: [IBM API Connect, DataPower, OAUTH]
 author: aditya-singh
 mermaid: true
-# image: /assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-design-header-low-definition-1.png
+image: /assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-design-header-low-definition-1.png
 ---
 
 Hello Tech Enthusiasts 👋,
