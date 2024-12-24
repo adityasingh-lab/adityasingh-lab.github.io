@@ -14,7 +14,7 @@ This article is the start of deep diving into the different form of OAuth implem
 
 ## OAuth Overview
 
-OAuth began as a solution to a common problem i.e.: Users needing to share access to their accounts on one platform with another platform without sharing their credentials. The need arose primarily from the experiences of developers working on platforms like Twitter and Flickr. They needed a secure way to delegate access without compromising user privacy. 
+OAuth began as a solution to a common problem i.e.: _Users needing to share access to their accounts on one platform with another platform without sharing their credentials_. The need arose primarily from the experiences of developers working on platforms like Twitter and Flickr. They needed a secure way to delegate access without compromising user privacy. 
 The first version, OAuth 1.0, was created in December 2007 as an open protocol. It was spearheaded by Blaine Cook (Twitter) and Chris Messina (Flickr) with contributions from other developers.
 
 OAuth 2.0, published in October 2012, it introduced the use of bearer tokens, making it easier for developers to implement. OAuth 2.0 also expanded its use cases, enabling mobile and web applications to use delegated authorization seamlessly. Over time, OAuth 2.0 became widely adopted by major platforms like Google, Facebook, and Microsoft. It has since been enhanced with extensions and best practices such as:
@@ -26,13 +26,12 @@ OAuth's evolution reflects the growing importance of secure and efficient user a
 
 ## OAuth in IBM API Connect v10
 
-OAuth in IBM API-Connect already been offerred since version 2 (earlier IBM API Management v2/v2/v4) which is refeered as Native OAuth Provider. It used to be developed as an API earlier which is now as resource (like TLS, User-Registries)
+OAuth in IBM API-Connect already been offered since version 2 (earlier IBM API Management v2/v2/v4) which is referred as Native OAuth Provider. It used to be developed as an API earlier which is now as resource (like TLS, User-Registries)
 Some considerations while implementing OAuth resource in IBM API Connect v10:
 
 - The gateway type is important. Both v5 compatible and Native API Gateway offers all grant type, the Native API Gateway offers much more features compare to v5 compatible. 
 
-
-- The resource needs to be implemented manully (not something available to autmate as part of toolkit command line yet).
+- The resource needs to be implemented manually (not something available to automate as part of toolkit command line yet).
 - OAuth API Editor feature can be used to export / import to higher environment while publishing resources.
 
 ## Implementing Client Credentials Grant {DataPower API Gateway}
@@ -59,7 +58,7 @@ _OAuth Implementation in IBM API Connect_
 
 ### Step 3: Create OAuth Secure API
 
-- From API-Connect Toolkit or APIM Develop, create new API `OAuth-Secure-Client-Cred-API` with path as `/test-oauth-secure`.
+- From API-Connect Toolkit or API-M UI, create new API `OAuth-Secure-Client-Cred-API` with path as `/test-oauth-secure`.
 - Select no secure (as we update after API creation).
 - After the API created, select the API and scroll down to '_Security Schemes_'.
 - Click Add and give name as `oauth-client-credential`.
@@ -71,14 +70,14 @@ _OAuth Implementation in IBM API Connect_
 
 ### Step 4: Subscribe
 
-- Create a new test application and subscribe it to the **OAuth-Secure-Client-Cred-API **. 
+- Create a new test application and subscribe it to the **OAuth-Secure-Client-Cred-API**.
 - Copy the client-id and client-secret (to be used in next step)
 
 ### Step 5: Testing
 
-To test the API, we first to get the token and next, use the token to validate. Here is the sequence diagram:
+To test the API, we first to get the token and next, use the token to validate. Here is the sequence diagram 👇:
 
-![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-client-cred-sequence.png)
+![sequence-diagram](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-client-cred-sequence.png)
 _Sequence Flow : OAuth Implementation in IBM API Connect_
 
 #### GET OAuth Token
