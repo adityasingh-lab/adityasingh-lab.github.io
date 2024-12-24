@@ -87,7 +87,7 @@ _Sequence Flow : OAuth Implementation in IBM API Connect_
 - _Body_ as **x-www-form-urlencoded**.
 - Add following Key and Value
 
-```text
+```
 grant_type:client_credentials
 client_id:<client-id copied in step 4>
 client_secret: <client-secret copied in step 4>
