@@ -36,8 +36,8 @@ Some considerations while implementing OAuth resource in IBM API Connect v10:
 
 ## Implementing Client Credentials Grant {DataPower API Gateway}
 
-![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-flow-chart-light.png){: .light}
-![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-flow-chart-dark.png){: .dark}
+![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-flow-chart-light-svg.svg){: .light}
+![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-flow-chart-dark-svg.svg){: .dark}
 _OAuth Implementation in IBM API Connect_
 
 ### Step 1 : Create Native OAuth Provider
@@ -77,7 +77,7 @@ _OAuth Implementation in IBM API Connect_
 
 To test the API, we first to get the token and next, use the token to validate. Here is the sequence diagram 👇:
 
-![sequence-diagram](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-client-cred-sequence.png)
+![sequence-diagram](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/oauth-client-cred-sequence-svg.svg)
 _Sequence Flow : OAuth Implementation in IBM API Connect_
 
 #### GET OAuth Token
@@ -109,7 +109,7 @@ _Postman Screenshot of Extracted token_
 ![](/assets/img/posts/2024-12-24-apim-oauth-client-cred-simple/postman-screenshot-token-validation-light.png){: .light }
 _Postman Screenshot of token validation_
 
-Please do comment yout thoughts and experience in API Management.
+Please do comment your thoughts and experience in API Management.
 
 — Keep Learning 😊
 
