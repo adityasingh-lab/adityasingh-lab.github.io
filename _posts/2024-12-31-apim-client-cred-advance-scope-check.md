@@ -10,7 +10,7 @@ image: /assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/header.
 
 Hello Tech Enthusiasts 👋,
 
-This article talks about implementing 'Advance Scope Check' in IBM API Connect v10. If you're new to my technical blog, I'd recommend to checkout my last article [Link](https://adityasingh-lab.github.io/posts/apim-oauth-client-cred-simple/){:target="_blank"} where I've covered basics on OAuth and implementing Client Credential (Application) grant type in IBM API Connect.
+This article talks about implementing 'Advance Scope Check' in IBM API Connect v10. If you're new to my technical blog, I'd recommend to checkout my last article [link](https://adityasingh-lab.github.io/posts/apim-oauth-client-cred-simple/){:target="_blank"}, where I've covered basics on OAuth and implementing Client Credential (Application) grant type in IBM API Connect.
 
 ## Overview
 
@@ -83,7 +83,7 @@ This service can be implemented and hosted at any application / server. I'm crea
 ```
 {: file='advance-scope-check-property.xml'}
 
-> The `application-1` and `application-2` are the client app that we'd be creating in later in article.
+> The `application-1` and `application-2` are the client app that we'd be creating later in [Add Subscription](https://adityasingh-lab.github.io/posts/apim-client-cred-advance-scope-check/#step-4-add-subscription).
 {: .prompt-info }
 
 ### Step 2: _Add Scope Service URL and OAuth Scope in Native OAuth Provider_
