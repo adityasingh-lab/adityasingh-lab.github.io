@@ -168,14 +168,14 @@ security:
   - oauth-client-cred: []
 ```
 
-### Step 4: Add subscription
+### Step 4: _Add subscription_
 
 As specified above advance-scope-check-property.xml, create 2 applications and subscribe both to the OAuth-Secure-Client-Cred-API
 
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/application-subscription-apim.png)
 _Sample Application Subscription_
 
-### Step 5: Testing
+### Step 5: _Testing_
 
 Below sequence design 👇 depicts the advance-scope flow which we're going to implement as part of this article: 
 
@@ -187,9 +187,9 @@ _Advance Scope Check Sequence Diagram_
 > - The following screenshot covers all the explanation. Add your comments in the posts if you'd like to additional details or reach out to me on my [linkedIn](https://www.linkedin.com/in/aditya-singh-apimgmt1987/){:target="_blank"}.
 {: .prompt-info }
 
-#### 5.1: Success / Happy-Path
+#### 5.1: _Success / Happy-Path_
 
-##### 5.1.1:  Application-1 Testing
+##### 5.1.1:  _Application-1 Testing_
 
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/application-1-extract-token.png)
 _Application-1 : Get OAuth Token_
@@ -200,7 +200,7 @@ _Application-1 : Validate Read operation_
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/application-1-validate-token-post-method.png)
 _Application-1: Validate Write(Post) Operation_
 
-##### 5.1.2: Application-2 Testing
+##### 5.1.2: _Application-2 Testing_
 
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/application-2-extract-token.png)
 _Application-2 : Get OAuth Token_
@@ -208,19 +208,19 @@ _Application-2 : Get OAuth Token_
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/application-1-validate-token-get-method.png)
 _Application-2 : Validate Read operation_
 
-#### 5.2: Failure / Unhappy-path
+#### 5.2: _Failure / Unhappy-path_
 
-##### 5.2.1: No Scope as part of OAuth token request
+##### 5.2.1: _No Scope as part of OAuth token request_
 
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/no-application-scope-error.png)
 _Error thrown when no scope in token request_
 
-##### 5.2.2: Scope not part of listed scopes
+##### 5.2.2: _Scope not part of listed scopes_
 
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/random-scope-error.png)
 _Error when Invalid Scope part of token request_
 
-##### 5.2.3 Application-2 calling POST(write) Operation
+##### 5.2.3 _Application-2 calling POST(write) Operation_
 
 The following screenshot depicts the behavior where application-2 trying to access POST (write) operation. The call get fails because Application-2 token scope doesn't have access to `scope:write`.
 
