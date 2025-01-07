@@ -45,7 +45,7 @@ High Level Steps of implementation:
 ![](/assets/img/posts/2024-12-31-apim-client-cred-advance-scope-check/advance-scope-check-flow-chart-dark.svg){: .dark }
 _Implementation Steps_
 
-### Key Things to be taken care during implementation
+### Key Considerations for Implementation
 
 To implement Advance Scope Check, we'd need additional service that would :
 
@@ -56,16 +56,16 @@ To implement Advance Scope Check, we'd need additional service that would :
 
 ### Step 1: _Create Scope Check Service_
 
-This service can be implemented and hosted at any application / server. I'm creating this service on DataPower itself (in separate non-apim domain). The service type I've implement an XML-Firewall service with loopback backend type.
+The scope service can be implemented and hosted at any application / server. I'm creating and hosting it on DataPower itself (in separate non-apim domain). The service type I've implemented is a XML-Firewall service with loopback backend type.
 
 - Create XML Firewall with loopback type.
-- Have the local-ip as 127.0.0.1 so that service isn't accessible from outside.
+- Configure local-ip as 127.0.0.1 so that service isn't accessible from outside.
 - Add policy with following implementation:
   - Match action to match all incoming request.
   - Convert Query param to convert the input GET request to XML
   - Add transformation XSLT action which should function in following steps:
     - Extract input `app_name` and `token_scope`.
-    - Match it with attribute `app_name` and `token_scope`from the XML property file.
+    - Match it with attribute `app_name` and `token_scope`from the XML property file (Sample file below 👇)
     - Set `x-selected-scope` header with mapped value.
     - If no value match, log error message `No Application Scope Match`
   - Add result action
@@ -73,9 +73,11 @@ This service can be implemented and hosted at any application / server. I'm crea
 ```xml
 <!-- Sample XML Property file -->
 <AdvanceScopeCheck>
+    <!-- Application-1 scope -->
     <Scopes app_name="application-1" token_scope="scope1">
     scope1:read scope1:write scope1:update scope1:delete
     </Scopes>
+    <!-- Application-2 scope -->
     <Scopes app_name="application-2" token_scope="scope1">
     scope1:read
     </Scopes>
