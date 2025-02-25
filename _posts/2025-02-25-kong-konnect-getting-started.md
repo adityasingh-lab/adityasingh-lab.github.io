@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Kong API Manamagement"
+title: "Getting Started with Kong API Management"
 date: 25-Feb-2025
 categories: [Kong, Konnect]
 tags: [Kong Konnect, API Gateway]
