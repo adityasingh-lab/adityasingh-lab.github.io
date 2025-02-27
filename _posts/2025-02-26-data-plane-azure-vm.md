@@ -2,7 +2,7 @@
 title: "Install Kong Data Plane Node (Kong Gateway) on Azure VM (Ubuntu) - Self-Managed Hybrid"
 date: 26-Feb-2025
 categories: [Kong, Konnect]
-tags: [Kong Konnect, API Gateway]
+tags: [Kong Konnect, API Gateway, Azure, Virtual Machine, VM, Ubuntu, Linux]
 author: aditya-singh
 mermaid: true
 image: /assets/img/posts/2025-02-26-data-plane-azure-vm/cover.gif
