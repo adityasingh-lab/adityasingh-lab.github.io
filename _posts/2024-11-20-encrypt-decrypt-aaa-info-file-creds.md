@@ -1,5 +1,5 @@
 ---
-title: "Encrypt & Decrypt AAA-Info file credentials"
+title: "Encrypt & Decrypt AAA-Info file credentials in IBM DataPower Gateway"
 date: 20-Nov-2024
 categories: [IBM, DataPower ]
 tags: [datapower, aaa, aaa-info]
