@@ -1,4 +1,18 @@
 <head>
+  {% comment %} linkedin titile add {% endcomment %}
+
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta
+    property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+  >
+  <meta
+    property="og:image"
+    content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.social_preview_image | absolute_url }}{% endif %}"
+  >
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="article">
+
   <meta name="google-site-verification" content="qKeKrlhZYjcvqURaOfwRvPoswg8p1D_OfE5G2SCTvyM">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -35,9 +49,11 @@
       {% include media-url.html src=site.social_preview_image absolute=true %}
     {%- endcapture -%}
 
-    {%- capture og_image -%}
-      <meta property="og:image" content="{{ img_url }}" />
-    {%- endcapture -%}
+    {% comment %}
+      {%- capture og_image -%}
+        <meta property="og:image" content="{{ img_url }}" />
+      {%- endcapture -%}
+    {% endcomment %}
 
     {%- capture twitter_image -%}
       <meta name="twitter:card" content="summary_large_image" />
