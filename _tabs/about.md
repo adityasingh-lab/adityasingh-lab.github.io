@@ -24,7 +24,7 @@ Currently I'm working as a Lead Software Engineer (Inside IR35 - Contracting) wi
 
 Apart from above, I also enjoy sightseeing, campaigning, bike ride, cooking, table-tennis, gym.
 
-You can connect with me on [LinkedIn)](https://www.linkedin.com/in/aditya-singh-apimgmt1987/){:target="_blank"}
+You can connect with me on [LinkedIn](https://www.linkedin.com/in/aditya-singh-apimgmt1987/){:target="_blank"}
 {:target="_blank"}
 
 ---
