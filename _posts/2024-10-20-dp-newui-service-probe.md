@@ -9,29 +9,30 @@ image: /assets/img/posts/2024-10-20-dp-newui-service-probe/p0-default-probe-page
 
 Hello Tech Enthusiasts 👋,
 
-As we all know now, our beloved existing WebGUI of DataPower won't exist beyond version 10.5.4 (Something definetly I'll miss). Previously, it was Blueprint-console which tried to take over WebGUI. However, it wasn't worthy enough.  now new UI is what going forward we must use.
-I was little skeptical to use as I was never comfrotable to use earlier Blueprint Console, and thankfully it was gone. But with new UI, I must say, moment I started, it's damm very fast as compare to existing UI. And this is reason also, the esiting UI does take a lot memory too, which is why it is not recommended to enable and use the DataPower UI in a Kubernetes / OpenShift environment. I'm believing now things should get change in future.
+As we all know by now, our beloved WebGUI in DataPower will no longer be available beyond version 10.5.4 (something I’ll definitely miss). Previously, IBM introduced the Blueprint Console as a replacement, but it never quite lived up to expectations. Now, we have a new UI that we must adopt going forward.
 
-Anyway, on the topic, of enabling probe from new UI has little different approach.
+I was a bit skeptical at first, especially since I was never comfortable using the earlier Blueprint Console — thankfully, it’s gone. But with the new UI, I must say, the moment I started using it, I was impressed. It's damn fast compared to the existing UI! One reason for the shift is also that the existing UI consumes a lot of memory, which is why it’s not recommended to enable and use it in Kubernetes or OpenShift environments. I believe things are finally heading in the right direction.
+
+Anyway, when it comes to enabling the probe from the new UI, the approach is slightly different.
 
 ## Difference in existing WebGUI probe vs new UI probe
 
-| Item                          | WebGUI                                                                                                                                                     | New UI                                                                                                                                                 |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Enabling Probe**            | We can enable directly from Service or from<br/>Troubleshooting Probe. No pre-setting <br/>needs to be enabled.                                            | We first need to enable gateway-peering ,<br/>following with probe setting. Then we can<br/>enable probe which also needed to add<br/>capture setting. |
-| **Disabling Multiple Probes** | We cannot disable multiple probes at once.<br/>We would either need to disable one after<br/>the other manually or need automatation<br/>through SSH/SOMA. | We can disable by simple disabling the<br/>probe setting (we'll talk about below).                                                                     |
-| **Flush Probe Record**        | We can flush the probe to clear our all the<br/>recorded transactions.                                                                                     | In new UI, the one way is to delete and<br/>create a new probe capture.                                                                                |
-| **Modify Probe Setting**      | We can edit the probe setting to capture only<br/>particular transactions.                                                                                 | We need to create new capture probe<br/>everytime and delete the existing (if<br/>required)  we need to modify.                                        |
-| **Performance**               | Slow, compare to new UI                                                                                                                                    | Quite fast as compare to tradational<br/>WebGUI probe                                                                                                  |
+| Item                          | WebGUI                                                                                                                                                   | New UI                                                                                                                                                 |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Enabling Probe**            | We can enable directly from Service or from<br/>Troubleshooting Probe. No pre-setting <br/>needs to be enabled.                                          | We first need to enable gateway-peering ,<br/>following with probe setting. Then we can<br/>enable probe which also needed to add<br/>capture setting. |
+| **Disabling Multiple Probes** | We cannot disable multiple probes at once.<br/>We would either need to disable one after<br/>the other manually or need automation<br/>through SSH/SOMA. | We can disable by simple disabling the<br/>probe setting (we'll talk about below).                                                                     |
+| **Flush Probe Record**        | We can flush the probe to clear our all the<br/>recorded transactions.                                                                                   | In new UI, the one way is to delete and<br/>create a new probe capture.                                                                                |
+| **Modify Probe Setting**      | We can edit the probe setting to capture only<br/>particular transactions.                                                                               | We need to create new capture probe<br/>every time and delete the existing (if<br/>required)  we need to modify.                                       |
+| **Performance**               | Slow, compare to new UI                                                                                                                                  | Quite fast as compare to traditional<br/>WebGUI probe                                                                                                  |
 
 ## Steps for enabling probe in New UI
 
-1.) As default, the probes are in disable state. This is because it's dependant on probe setting. If you logon to DataPower Homepage > Monitoring & Troubelshooting > Troubelshooting > Probe, you'd notice all probes are greyed out 👇:
+1.) As default, the probes are in disable state. This is because it's dependant on probe setting. If you logon to DataPower Homepage > Monitoring & Troubleshooting > Troubleshooting > Probe, you'd notice all probes are greyed out 👇:
 
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p0-default-probe-page.png)
 _Default Probe Page_
 
-2.) You can either directly click on Modify setting or search 'Probe' in seach bar and select '_Probe Setting_'
+2.) You can either directly click on Modify setting or search 'Probe' in search bar and select '_Probe Setting_'
 
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p1-search-probe-setting.png)
 _Search Probe Setting_
@@ -54,10 +55,10 @@ _Gateway Peering Page_
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p4-save-probe-setting.png)
 _Enable Probe Setting_
 
-6.) Follow DataPower Homepage > Monitoring & Troubelshooting > Troubelshooting > Probe. Now you should see all 'Open Probe' icon now available. Select the probe that needs to capture : 👇
+6.) Follow DataPower Homepage > Monitoring & Troubleshooting > Troubleshooting > Probe. Now you should see all 'Open Probe' icon now available. Select the probe that needs to capture : 👇
 
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p5-open-probe-troubleshooting.png)
-_Troubelshooting Probe Page_
+_Troubleshooting Probe Page_
 
 7.) After selection, we see following screen 👇:
 
@@ -69,12 +70,12 @@ _Service Probe Screen_
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p7-create-probe-capture.png)
 _Create Probe Capture_
 
-9.) Hit the service, that should increate the capture count. 👇
+9.) Hit the service, that should create the capture count. 👇
 
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p8-capture-probe-count.png)
 _Capture Probe Count_
 
-10.) Select the probe abobe and that should take to the list of transaction ID. Similar to WebGUI probe
+10.) Select the probe above and that should take to the list of transaction ID. Similar to WebGUI probe
 
 ![](/assets/img/posts/2024-10-20-dp-newui-service-probe/p9-probe-transactions.png)
 _Transaction list_
