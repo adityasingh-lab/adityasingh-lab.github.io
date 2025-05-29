@@ -26,4 +26,4 @@ To enable the test, I'm using free public smtp server : https://mailtrap.io
 
 <!-- <a href="https://buymeacoffee.com/aditya.singh"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" href="" ></a> -->
 
-If this article helped you in someway and want to support me, you can ... [![](/assets/img/posts/buymecoffee/default-yellow-ezgif.com-webp-to-jpg-converter.jpg)](https://buymeacoffee.com/aditya.singh){:target="_blank"}
+If this article helped you in someway and want to support me, you can ... [![](/assets/img/posts/buymecoffee/default-yellow-ezgif.com-webp-to-jpg-converter.jpg)](https://buymeacoffee.com/aditya.singh){:target="_blank"} 
